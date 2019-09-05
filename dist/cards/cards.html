@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      @font-face {
+    font-family: "Montserrat-bold"
+    src: url('/src/fonts/bold/Montserrat.woff') format("woff"),
+        url('/src/fonts/bold/Montserrat.ttf') format("truetype"),
+        url('/src/fonts/bold/Montserrat.svg') format("svg");
+}
+@font-face {
+    font-family: "Montserrat-regular"
+    src: url('/src/fonts/regular/Montserrat.woff'),
+        url('/src/fonts/regular/Montserrat.ttf'),
+        url('/src/fonts/regular/Montserrat.svg');
+}h1 {
+    display: flex;
+    font-family:  "Montserrat-bold", sans-serif;
+    font-weight: 700;
+}
+span {
+    font-family:  "Montserrat-regular", sans-serif;
+}
+.find {
+    max-width: 380px;
+    max-height: 374px;
+    padding: 30px 30px 40px 30px;
+    border: 1px solid rgba(0,0,0,0.12); //выделить в отдельный модификатор
+    border-radius: 4px; //отдельный модификатор
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2); //отдельный модификатор
+}
+    </style>
+  <link href="app.css" rel="stylesheet"></head>
+  <body><script type="text/javascript" src="app.js"></script></body>
+</html>
+<div class="find">
+  <h1>Найдём номера под ваши пожелания</h1>
+  <div class="date"><span>ПРИБЫТИЕ </span>
+    <input type="date">
+  </div>
+  <div class="date"><span> ВЫЕЗД</span>
+    <input type="date">
+  </div><span>ГОСТИ</span>
+  <input type="range">
+  <input type="button" value="ПОДОБРАТЬ НОМЕР">
+</div>
+<div class="reserv"></div>
+<div class="calendar"></div>
+<div class="signUp"></div>
+<div class="singIn"></div>
+<div class="block"></div>
