@@ -5,20 +5,23 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
         style
-            include ../../scss/fonts.scss
+            include ../../assets/css/normalize.css
+            include ../../assets/scss/vars.scss
+            include ../../assets/scss/fonts.scss
             include cards.scss
     body
-.find
+.find._border._bRadius._bShadow._flex
     h1 Найдём номера под ваши пожелания
-    .date
-        span ПРИБЫТИЕ 
-        input(type="date")
-    .date
-        span  ВЫЕЗД
-        input(type="date")
+    ._inlineFlex
+        .date
+            span ПРИБЫТИЕ 
+            input(type="date").input_150
+        .date
+            span  ВЫЕЗД
+            input(type="date").input_150
     span ГОСТИ
-    input(type="range")
-    input(type="button" value="ПОДОБРАТЬ НОМЕР")
+    input(type="text" placeholder="СКОЛЬКО ГОСТЕЙ").input_320 
+    input(type="button" value="ПОДОБРАТЬ НОМЕР").input_320.btn.btn_big
 .reserv
 .calendar
 .signUp

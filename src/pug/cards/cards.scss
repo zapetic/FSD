@@ -1,16 +1,60 @@
+body {
+    padding:30px;
+}
 h1 {
-    display: flex;
-    font-family:  "Montserrat-bold", sans-serif;
+    font-family:  var(--montserrat_bold);
+    font-style: normal;
     font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
 }
 span {
-    font-family:  "Montserrat-regular", sans-serif;
+    font-family:  var(--montserrat_reg);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
 }
 .find {
-    max-width: 380px;
-    max-height: 374px;
+    max-width: 320px;
+    max-height: 304px;
     padding: 30px 30px 40px 30px;
-    border: 1px solid rgba(0,0,0,0.12); //выделить в отдельный модификатор
-    border-radius: 4px; //отдельный модификатор
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2); //отдельный модификатор
+}
+._border {
+    border: 1px solid rgba(0,0,0,0.12);
+}
+._bRadius {
+    border-radius: 4px;
+}
+._bShadow {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+._flex {
+    display: flex;
+    flex-direction: column;
+}
+._inlineFlex {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.input_320 {
+    width: 320px;
+}
+.input_150 {
+    width: 150px;
+}
+input {
+    padding-left: 15px;
+    border-radius: 4px;
+    height: 44px;
+}
+.btn {
+    border-radius: 22px;
+}
+.btn_big {
+    border: 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.btn_small {
+
 }

@@ -1,4 +1,7 @@
-$mainFont: 'Montserrat', sans-serif;
-$darkShade: #1F2041;
-$purple: #BC9CFF;
-$Green: #6FCF97;
+:root {
+    --montserrat_bold: 'Montserrat-bold', sans-serif;
+    --montserrat_reg: 'Montserrat-regular', sans-serif;
+    --darkShade: #1F2041;
+    --purple: #BC9CFF;
+    --green: #6FCF97;
+}
